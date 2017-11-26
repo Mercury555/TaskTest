@@ -52,14 +52,14 @@ public class TaskTestApplication {
                         case "REAL":
                             record.setReal1(dbfRow.getString("REAL"));
                             break;
-                        case "pzn":
-                            record.setPzn(dbfRow.getString("pzn"));
+                        case "PZN":
+                            record.setPzn(dbfRow.getString("PZN"));
                             break;
                         case "UER":
                             record.setUer(dbfRow.getString("UER"));
                             break;
-                        case "rgn":
-                            record.setRgn(dbfRow.getString("rgn"));
+                        case "RGN":
+                            record.setRgn(dbfRow.getString("RGN"));
                             break;
                         case "IND":
                             record.setInd(dbfRow.getString("IND"));
@@ -73,8 +73,8 @@ public class TaskTestApplication {
                         case "ADR":
                             record.setAdr(dbfRow.getString("ADR"));
                             break;
-                        case "rkc":
-                            record.setRkc(dbfRow.getString("rkc"));
+                        case "RKC":
+                            record.setRkc(dbfRow.getString("RKC"));
                             break;
                         case "NAMEP":
                             record.setNamep(dbfRow.getString("NAMEP"));
