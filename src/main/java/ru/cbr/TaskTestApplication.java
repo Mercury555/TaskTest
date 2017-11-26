@@ -28,11 +28,7 @@ public class TaskTestApplication {
 
     private static void generateDummyData(ApplicationContext context) {
         RecordRepository repository = context.getBean(RecordRepository.class);
-        {
-            Record record = new Record("pzn", "rgn", "rkc");
 
-            repository.save(record);
-        }
         {
             Path file = Paths.get("src/main/resources/BNKSEEK.DBF");
             DbfReader dbfReader = new DbfReader(file.toFile(), Charset.forName("CP866"));
