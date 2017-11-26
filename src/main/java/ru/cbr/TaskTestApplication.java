@@ -34,7 +34,7 @@ public class TaskTestApplication {
             repository.save(record);
         }
         {
-            Path file = Paths.get("C:\\Users\\yuliya.ditarova\\Desktop\\задание\\bnkseek.dbf");
+            Path file = Paths.get("src/main/resources/BNKSEEK.DBF");
             DbfReader dbfReader = new DbfReader(file.toFile(), Charset.forName("CP866"));
             DbfHeader dbfHeader = dbfReader.getHeader();
             List<String> namesOfRow = getNamesOfRow();
