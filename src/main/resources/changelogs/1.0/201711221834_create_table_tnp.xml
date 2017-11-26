@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create_table_bankseek.tnp.fx" author="mh" dbms="postgresql">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="tnp" schemaName="bankseek"/>
+            </not>
+        </preConditions>
+        <sql>
+            CREATE TABLE bankseek.real (
+            VKEY varchar(2),
+            TNP	varchar(1),
+            FULLNAME varchar(50),
+            SHORTNAME varchar(6),
+            CONSTRAINT vkey_pk PRIMARY KEY(vkey)
+            );
+        </sql>
+    </changeSet>
+
+    <changeSet id="bankseek.insert.real" author="mh" dbms="postgresql">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="tnp" schemaName="bankseek"/>
+        </preConditions>
+        <sql>
+            INSERT INTO bankseek.real  VALUES('01',	'1',	'ГОРОД',	'Г');
+            INSERT INTO bankseek.real  VALUES('02',	'2',	'ПОСЕЛОК',	'П');
+            INSERT INTO bankseek.real  VALUES('03',	'3',	'СЕЛО',	'С');
+            INSERT INTO bankseek.real  VALUES('04',	'4',	'ПОСЕЛОК ГОРОДСКОГО ТИПА',	'ПГТ');
+            INSERT INTO bankseek.real  VALUES('05',	'5',	'СТАНИЦА',	'СТ-ЦА');
+            INSERT INTO bankseek.real  VALUES('06',	'6',	'АУЛ',	'АУЛ');
+            INSERT INTO bankseek.real  VALUES('07',	'7',	'РАБОЧИЙ ПОСЕЛОК',	'РП');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="INCOUT">
+      <ObjectId>16393</ObjectId>
+    </database>
+    <database id="4" parent="1" name="tasktest">
+      <ObjectId>16542</ObjectId>
+    </database>
+    <schema id="5" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-11-26.22:07:27.856</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1012</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="6" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+    </schema>
+    <table id="11" parent="5" name="battles">
+      <ObjectId>16509</ObjectId>
+      <StateNumber>957</StateNumber>
+    </table>
+    <table id="12" parent="5" name="classes">
+      <ObjectId>16512</ObjectId>
+      <StateNumber>956</StateNumber>
+    </table>
+    <table id="13" parent="5" name="company">
+      <ObjectId>16394</ObjectId>
+      <StateNumber>568</StateNumber>
+    </table>
+    <table id="14" parent="5" name="customers">
+      <ObjectId>16539</ObjectId>
+      <StateNumber>1012</StateNumber>
+    </table>
+    <table id="15" parent="5" name="income">
+      <ObjectId>16464</ObjectId>
+      <StateNumber>711</StateNumber>
+    </table>
+    <table id="16" parent="5" name="income_o">
+      <ObjectId>16470</ObjectId>
+      <StateNumber>713</StateNumber>
+    </table>
+    <table id="17" parent="5" name="laptop">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>668</StateNumber>
+    </table>
+    <table id="18" parent="5" name="outcome">
+      <ObjectId>16467</ObjectId>
+      <StateNumber>712</StateNumber>
+    </table>
+    <table id="19" parent="5" name="outcome_o">
+      <ObjectId>16473</ObjectId>
+      <StateNumber>714</StateNumber>
+    </table>
+    <table id="20" parent="5" name="outcomes">
+      <ObjectId>16518</ObjectId>
+      <StateNumber>957</StateNumber>
+    </table>
+    <table id="21" parent="5" name="pass_in_trip">
+      <ObjectId>16397</ObjectId>
+      <StateNumber>567</StateNumber>
+    </table>
+    <table id="22" parent="5" name="passenger">
+      <ObjectId>16400</ObjectId>
+      <StateNumber>566</StateNumber>
+    </table>
+    <table id="23" parent="5" name="pc">
+      <ObjectId>16432</ObjectId>
+      <StateNumber>669</StateNumber>
+    </table>
+    <table id="24" parent="5" name="printer">
+      <ObjectId>16438</ObjectId>
+      <StateNumber>670</StateNumber>
+    </table>
+    <table id="25" parent="5" name="product">
+      <ObjectId>16435</ObjectId>
+      <StateNumber>670</StateNumber>
+    </table>
+    <table id="26" parent="5" name="ships">
+      <ObjectId>16515</ObjectId>
+      <StateNumber>956</StateNumber>
+    </table>
+    <table id="27" parent="5" name="trip">
+      <ObjectId>16403</ObjectId>
+      <StateNumber>568</StateNumber>
+    </table>
+    <table id="28" parent="5" name="utb">
+      <ObjectId>16484</ObjectId>
+      <StateNumber>781</StateNumber>
+    </table>
+    <table id="29" parent="5" name="utq">
+      <ObjectId>16487</ObjectId>
+      <StateNumber>780</StateNumber>
+    </table>
+    <table id="30" parent="5" name="utv">
+      <ObjectId>16490</ObjectId>
+      <StateNumber>781</StateNumber>
+    </table>
+    <column id="31" parent="11" name="name">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>948</StateNumber>
+    </column>
+    <column id="32" parent="11" name="date">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>948</StateNumber>
+    </column>
+    <index id="33" parent="11" name="pk_battles">
+      <ObjectId>16521</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="11" name="pk_battles">
+      <ObjectId>16522</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>pk_battles</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="12" name="class">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>949</StateNumber>
+    </column>
+    <column id="36" parent="12" name="type">
+      <Position>2</Position>
+      <DataType>varchar(2)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>949</StateNumber>
+    </column>
+    <column id="37" parent="12" name="country">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>949</StateNumber>
+    </column>
+    <column id="38" parent="12" name="numguns">
+      <Position>4</Position>
+      <DataType>smallint|0</DataType>
+      <StateNumber>949</StateNumber>
+    </column>
+    <column id="39" parent="12" name="bore">
+      <Position>5</Position>
+      <DataType>real|0</DataType>
+      <StateNumber>949</StateNumber>
+    </column>
+    <column id="40" parent="12" name="displacement">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>949</StateNumber>
+    </column>
+    <index id="41" parent="12" name="pk_classes">
+      <ObjectId>16523</ObjectId>
+      <ColNames>class</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="12" name="pk_classes">
+      <ObjectId>16524</ObjectId>
+      <ColNames>class</ColNames>
+      <UnderlyingIndexName>pk_classes</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="13" name="id_comp">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+    </column>
+    <column id="44" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>char(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+    </column>
+    <index id="45" parent="13" name="pk2">
+      <ObjectId>16406</ObjectId>
+      <ColNames>id_comp</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="13" name="pk2">
+      <ObjectId>16407</ObjectId>
+      <ColNames>id_comp</ColNames>
+      <UnderlyingIndexName>pk2</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="14" name="cnum">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1012</StateNumber>
+    </column>
+    <column id="48" parent="14" name="cname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>1012</StateNumber>
+    </column>
+    <column id="49" parent="14" name="city">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>1012</StateNumber>
+    </column>
+    <column id="50" parent="14" name="ratings">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1012</StateNumber>
+    </column>
+    <column id="51" parent="14" name="snum">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>1012</StateNumber>
+    </column>
+    <column id="52" parent="15" name="code">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>711</StateNumber>
+    </column>
+    <column id="53" parent="15" name="point">
+      <Position>2</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>711</StateNumber>
+    </column>
+    <column id="54" parent="15" name="date">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>711</StateNumber>
+    </column>
+    <column id="55" parent="15" name="inc">
+      <Position>4</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>711</StateNumber>
+    </column>
+    <index id="56" parent="15" name="pk_income">
+      <ObjectId>16476</ObjectId>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="57" parent="15" name="pk_income">
+      <ObjectId>16477</ObjectId>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>pk_income</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="16" name="point">
+      <Position>1</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>713</StateNumber>
+    </column>
+    <column id="59" parent="16" name="date">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>713</StateNumber>
+    </column>
+    <column id="60" parent="16" name="inc">
+      <Position>3</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>713</StateNumber>
+    </column>
+    <index id="61" parent="16" name="pk_income_o">
+      <ObjectId>16480</ObjectId>
+      <ColNames>point
+date</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="16" name="pk_income_o">
+      <ObjectId>16481</ObjectId>
+      <ColNames>point
+date</ColNames>
+      <UnderlyingIndexName>pk_income_o</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="63" parent="17" name="code">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="64" parent="17" name="model">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="65" parent="17" name="speed">
+      <Position>3</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="66" parent="17" name="ram">
+      <Position>4</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="67" parent="17" name="hd">
+      <Position>5</Position>
+      <DataType>real|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="68" parent="17" name="price">
+      <Position>6</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <StateNumber>660</StateNumber>
+    </column>
+    <column id="69" parent="17" name="screen">
+      <Position>7</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+    </column>
+    <index id="70" parent="17" name="pk_laptop">
+      <ObjectId>16441</ObjectId>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="71" parent="17" name="pk_laptop">
+      <ObjectId>16442</ObjectId>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>pk_laptop</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="72" parent="17" name="fk_laptop_product">
+      <ObjectId>16449</ObjectId>
+      <ColNames>model</ColNames>
+      <RefTableId>16435</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>pk_product</RefKeyName>
+      <RefColNames>model</RefColNames>
+    </foreign-key>
+    <column id="73" parent="18" name="code">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>712</StateNumber>
+    </column>
+    <column id="74" parent="18" name="point">
+      <Position>2</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>712</StateNumber>
+    </column>
+    <column id="75" parent="18" name="date">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>712</StateNumber>
+    </column>
+    <column id="76" parent="18" name="out">
+      <Position>4</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>712</StateNumber>
+    </column>
+    <index id="77" parent="18" name="pk_outcome">
+      <ObjectId>16478</ObjectId>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="18" name="pk_outcome">
+      <ObjectId>16479</ObjectId>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>pk_outcome</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="79" parent="19" name="point">
+      <Position>1</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>714</StateNumber>
+    </column>
+    <column id="80" parent="19" name="date">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>714</StateNumber>
+    </column>
+    <column id="81" parent="19" name="out">
+      <Position>3</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>714</StateNumber>
+    </column>
+    <index id="82" parent="19" name="pk_outcome_o">
+      <ObjectId>16482</ObjectId>
+      <ColNames>point
+date</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="19" name="pk_outcome_o">
+      <ObjectId>16483</ObjectId>
+      <ColNames>point
+date</ColNames>
+      <UnderlyingIndexName>pk_outcome_o</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="84" parent="20" name="ship">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>951</StateNumber>
+    </column>
+    <column id="85" parent="20" name="battle">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>951</StateNumber>
+    </column>
+    <column id="86" parent="20" name="result">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>951</StateNumber>
+    </column>
+    <index id="87" parent="20" name="pk_outcomes">
+      <ObjectId>16527</ObjectId>
+      <ColNames>ship
+battle</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="88" parent="20" name="pk_outcomes">
+      <ObjectId>16528</ObjectId>
+      <ColNames>ship
+battle</ColNames>
+      <UnderlyingIndexName>pk_outcomes</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="89" parent="20" name="fk_outcomes_battles">
+      <ObjectId>16534</ObjectId>
+      <ColNames>battle</ColNames>
+      <RefTableId>16509</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>battles</RefTableName>
+      <RefKeyName>pk_battles</RefKeyName>
+      <RefColNames>name</RefColNames>
+    </foreign-key>
+    <column id="90" parent="21" name="trip_no">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>559</StateNumber>
+    </column>
+    <column id="91" parent="21" name="date">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>559</StateNumber>
+    </column>
+    <column id="92" parent="21" name="id_psg">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>559</StateNumber>
+    </column>
+    <column id="93" parent="21" name="place">
+      <Position>4</Position>
+      <DataType>char(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>559</StateNumber>
+    </column>
+    <index id="94" parent="21" name="pk_pt">
+      <ObjectId>16408</ObjectId>
+      <ColNames>trip_no
+date
+id_psg</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="95" parent="21" name="pk_pt">
+      <ObjectId>16409</ObjectId>
+      <ColNames>trip_no
+date
+id_psg</ColNames>
+      <UnderlyingIndexName>pk_pt</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="96" parent="21" name="fk_pass_in_trip_trip">
+      <ObjectId>16419</ObjectId>
+      <ColNames>trip_no</ColNames>
+      <RefTableId>16403</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>trip</RefTableName>
+      <RefKeyName>pk_t</RefKeyName>
+      <RefColNames>trip_no</RefColNames>
+    </foreign-key>
+    <foreign-key id="97" parent="21" name="fk_pass_in_trip_passenger">
+      <ObjectId>16414</ObjectId>
+      <ColNames>id_psg</ColNames>
+      <RefTableId>16400</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>passenger</RefTableName>
+      <RefKeyName>pk_psg</RefKeyName>
+      <RefColNames>id_psg</RefColNames>
+    </foreign-key>
+    <column id="98" parent="22" name="id_psg">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>560</StateNumber>
+    </column>
+    <column id="99" parent="22" name="name">
+      <Position>2</Position>
+      <DataType>char(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>560</StateNumber>
+    </column>
+    <index id="100" parent="22" name="pk_psg">
+      <ObjectId>16410</ObjectId>
+      <ColNames>id_psg</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="101" parent="22" name="pk_psg">
+      <ObjectId>16411</ObjectId>
+      <ColNames>id_psg</ColNames>
+      <UnderlyingIndexName>pk_psg</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="23" name="code">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="103" parent="23" name="model">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="104" parent="23" name="speed">
+      <Position>3</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="105" parent="23" name="ram">
+      <Position>4</Position>
+      <DataType>smallint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="106" parent="23" name="hd">
+      <Position>5</Position>
+      <DataType>real|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="107" parent="23" name="cd">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>661</StateNumber>
+    </column>
+    <column id="108" parent="23" name="price">
+      <Position>7</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <StateNumber>661</StateNumber>
+    </column>
+    <index id="109" parent="23" name="pk_pc">
+      <ObjectId>16443</ObjectId>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="110" parent="23" name="pk_pc">
+      <ObjectId>16444</ObjectId>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>pk_pc</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="111" parent="23" name="fk_pc_product">
+      <ObjectId>16454</ObjectId>
+      <ColNames>model</ColNames>
+      <RefTableId>16435</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>pk_product</RefKeyName>
+      <RefColNames>model</RefColNames>
+    </foreign-key>
+    <column id="112" parent="24" name="code">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>663</StateNumber>
+    </column>
+    <column id="113" parent="24" name="model">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>663</StateNumber>
+    </column>
+    <column id="114" parent="24" name="color">
+      <Position>3</Position>
+      <DataType>char|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>663</StateNumber>
+    </column>
+    <column id="115" parent="24" name="type">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>663</StateNumber>
+    </column>
+    <column id="116" parent="24" name="price">
+      <Position>5</Position>
+      <DataType>numeric(12,2)|0</DataType>
+      <StateNumber>663</StateNumber>
+    </column>
+    <index id="117" parent="24" name="pk_printer">
+      <ObjectId>16447</ObjectId>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="118" parent="24" name="pk_printer">
+      <ObjectId>16448</ObjectId>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>pk_printer</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="119" parent="24" name="fk_printer_product">
+      <ObjectId>16459</ObjectId>
+      <ColNames>model</ColNames>
+      <RefTableId>16435</RefTableId>
+      <RefColPositions>2</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>pk_product</RefKeyName>
+      <RefColNames>model</RefColNames>
+    </foreign-key>
+    <column id="120" parent="25" name="maker">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>662</StateNumber>
+    </column>
+    <column id="121" parent="25" name="model">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>662</StateNumber>
+    </column>
+    <column id="122" parent="25" name="type">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>662</StateNumber>
+    </column>
+    <index id="123" parent="25" name="pk_product">
+      <ObjectId>16445</ObjectId>
+      <ColNames>model</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="124" parent="25" name="pk_product">
+      <ObjectId>16446</ObjectId>
+      <ColNames>model</ColNames>
+      <UnderlyingIndexName>pk_product</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="125" parent="26" name="name">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>950</StateNumber>
+    </column>
+    <column id="126" parent="26" name="class">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>950</StateNumber>
+    </column>
+    <column id="127" parent="26" name="launched">
+      <Position>3</Position>
+      <DataType>smallint|0</DataType>
+      <StateNumber>950</StateNumber>
+    </column>
+    <index id="128" parent="26" name="pk_ships">
+      <ObjectId>16525</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="129" parent="26" name="pk_ships">
+      <ObjectId>16526</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>pk_ships</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="130" parent="26" name="fk_ships_classes">
+      <ObjectId>16529</ObjectId>
+      <ColNames>class</ColNames>
+      <RefTableId>16512</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>classes</RefTableName>
+      <RefKeyName>pk_classes</RefKeyName>
+      <RefColNames>class</RefColNames>
+    </foreign-key>
+    <column id="131" parent="27" name="trip_no">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="132" parent="27" name="id_comp">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="133" parent="27" name="plane">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="134" parent="27" name="town_from">
+      <Position>4</Position>
+      <DataType>char(25)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="135" parent="27" name="town_to">
+      <Position>5</Position>
+      <DataType>char(25)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="136" parent="27" name="time_out">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <column id="137" parent="27" name="time_in">
+      <Position>7</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+    </column>
+    <index id="138" parent="27" name="pk_t">
+      <ObjectId>16412</ObjectId>
+      <ColNames>trip_no</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="139" parent="27" name="pk_t">
+      <ObjectId>16413</ObjectId>
+      <ColNames>trip_no</ColNames>
+      <UnderlyingIndexName>pk_t</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="140" parent="27" name="fk_trip_company">
+      <ObjectId>16424</ObjectId>
+      <ColNames>id_comp</ColNames>
+      <RefTableId>16394</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>company</RefTableName>
+      <RefKeyName>pk2</RefKeyName>
+      <RefColNames>id_comp</RefColNames>
+    </foreign-key>
+    <column id="141" parent="28" name="b_datetime">
+      <Position>1</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>774</StateNumber>
+    </column>
+    <column id="142" parent="28" name="b_q_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>774</StateNumber>
+    </column>
+    <column id="143" parent="28" name="b_v_id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>774</StateNumber>
+    </column>
+    <column id="144" parent="28" name="b_vol">
+      <Position>4</Position>
+      <DataType>smallint|0</DataType>
+      <StateNumber>774</StateNumber>
+    </column>
+    <index id="145" parent="28" name="pk_utb">
+      <ObjectId>16493</ObjectId>
+      <ColNames>b_datetime
+b_q_id
+b_v_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="146" parent="28" name="pk_utb">
+      <ObjectId>16494</ObjectId>
+      <ColNames>b_datetime
+b_q_id
+b_v_id</ColNames>
+      <UnderlyingIndexName>pk_utb</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="147" parent="28" name="fk_utb_utq">
+      <ObjectId>16499</ObjectId>
+      <ColNames>b_q_id</ColNames>
+      <RefTableId>16487</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>utq</RefTableName>
+      <RefKeyName>pk_utq</RefKeyName>
+      <RefColNames>q_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="148" parent="28" name="fk_utb_utv">
+      <ObjectId>16504</ObjectId>
+      <ColNames>b_v_id</ColNames>
+      <RefTableId>16490</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>utv</RefTableName>
+      <RefKeyName>pk_utv</RefKeyName>
+      <RefColNames>v_id</RefColNames>
+    </foreign-key>
+    <column id="149" parent="29" name="q_id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+    </column>
+    <column id="150" parent="29" name="q_name">
+      <Position>2</Position>
+      <DataType>varchar(35)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>775</StateNumber>
+    </column>
+    <index id="151" parent="29" name="pk_utq">
+      <ObjectId>16495</ObjectId>
+      <ColNames>q_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="29" name="pk_utq">
+      <ObjectId>16496</ObjectId>
+      <ColNames>q_id</ColNames>
+      <UnderlyingIndexName>pk_utq</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="153" parent="30" name="v_id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>776</StateNumber>
+    </column>
+    <column id="154" parent="30" name="v_name">
+      <Position>2</Position>
+      <DataType>varchar(35)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>776</StateNumber>
+    </column>
+    <column id="155" parent="30" name="v_color">
+      <Position>3</Position>
+      <DataType>char|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>776</StateNumber>
+    </column>
+    <index id="156" parent="30" name="pk_utv">
+      <ObjectId>16497</ObjectId>
+      <ColNames>v_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="157" parent="30" name="pk_utv">
+      <ObjectId>16498</ObjectId>
+      <ColNames>v_id</ColNames>
+      <UnderlyingIndexName>pk_utv</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
